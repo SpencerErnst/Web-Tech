@@ -1,99 +1,104 @@
-/* Reset default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic body styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
     background-color: #f4f4f4;
 }
 
-/* Navigation bar styling */
-nav {
-    background-color: #333;
-    padding: 1rem;
-}
-
+/* Navigation */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #2a2a2a;
+    margin: 0;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffd700; /* Gold color on hover */
+nav ul li a:hover {
+    color: #ff4500;
 }
 
-/* Main content container */
+/* Main Content */
 .container {
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 20px auto;
 }
 
-/* Hero section styling */
-.hero {
-    text-align: center;
-    margin-bottom: 2rem;
+.main {
+    display: flex;
+    gap: 20px;
 }
 
-.hero h1 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-/* Content section layout */
+/* Content Area */
 .content {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    flex: 2;
+    background: white;
+    padding: 20px;
 }
 
-.text-content {
-    flex: 1;
+h1 {
+    margin-bottom: 20px;
 }
 
-.text-content h2 {
-    color: #333;
-    margin-bottom: 1rem;
+/* Image handling using float like in example */
+.image-container {
+    float: right;
+    width: 350px;  /* Increased from 250px */
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
-.text-content p {
-    margin-bottom: 1rem;
-}
-
-/* Image section styling */
-.image-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-img {
-    max-width: 100%;
+.image-container img {
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: block;
 }
 
-/* Footer styling */
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+}
+
+.sidebar-item {
+    margin-bottom: 30px;
+}
+
+.sidebar-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* External Link */
+.external-link {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0 60px 0;
+}
+
+.external-link a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #2a2a2a;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
